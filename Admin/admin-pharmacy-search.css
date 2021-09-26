@@ -38,13 +38,42 @@
   }
   
   h1 {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
   }
-  
+  h2 {
+      font-size: 24px;
+      font-weight: 700;
+  }
+  h3 {
+      font-size: 21px;
+      font-weight: 700;
+      margin: 15px;
+  }
   p {
     font-size: 16px;
     font-weight: 400;
+  }
+  
+  .filter {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  .pharmacies {
+      text-decoration: underline;
+      text-decoration-color: #3A5DF8;
+      text-underline-position: under;
+  }
+  .clinics {
+      text-decoration: underline;
+      text-decoration-color: #C3C7D2;
+      text-underline-position: under;
+  }
+  .filter a:link,
+  .filter a:visited {
+      color: var(--primaryText);
   }
   
   .search {
@@ -52,18 +81,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 15px;
   }
   
   
   input, select {
-      width: 250px;
+      width: 350px;
+      margin-right: 10px;
+      margin-bottom: 10px;
       padding: 10px;
       border: 1px solid var(--tertiaryText);
       border-radius: 4px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-  
-  
   }
   input {
       background-color: var(--background);
@@ -93,7 +121,7 @@
       padding: 12px 30px;
       width: 160px;
       text-align: center;
-      /*margin-top: 15px;*/
+      /*margin: 0 auto;*/
   }
   
   .search-btn:hover {
@@ -111,8 +139,10 @@
       background-color: #fff;
       border: 1px solid var(--tertiaryText);
       align-items: center;
+      padding: 15px 60px;
       margin: 30px;
-      /*padding: 15px 60px;*/
+      max-height: 65vh;
+      overflow: scroll;
   }
   .bubble-style:hover {
       background-color: #DAE4FF;
@@ -195,22 +225,19 @@
   }
   
   /***** Recent Visits *****/
-  .doctors {
+  .results {
       grid-area: doctors;
-      margin: 1rem 1rem 1rem 1rem;
+      align-items: center;
+      margin: 30px;
   }
-  .doctors .heading{
-    margin-bottom: 5px;
+  .results .heading{
+    margin-bottom: 15px;
   }
-  .doctors-bubble {
+  .results-bubble {
     display: grid;
     justify-content: center;
     text-align: center;
     margin: 10px 0;
-  }
-  
-  .doctors-bubble img {
-      margin: 15px 30px;
   }
   
   .clinic {
@@ -223,15 +250,6 @@
   
   }
   
-  .doctor-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-  
-  .doctor-info p {
-      margin: 0;
-  }
   
   
   
@@ -280,6 +298,7 @@
     .hamburger {
       display: none;
     }
+  
   }
   
   
@@ -298,29 +317,33 @@
         font-size: 30px;
       }
   
+      .filter {
+          flex-direction: row;
+      }
       .search {
           flex-direction: row;
           justify-content: center;
           align-items: center;
+      }
+      input {
+          width: 350px;
+          background-color: var(--background);
+      }
+  
+      select {
+          width: 160px;
+          background-color: #fff;
       }
       input, select {
           margin-bottom: 0;
       }
   
       /***** Styling Desktop View n*****/
-      .border-style {
-          border-radius: 20px;
-          background-color: #fff;
-          border: 1px solid var(--tertiaryText);
-          align-items: center;
-          margin: 30px;
-          padding: 15px 60px;
-      }
-      .doctors {
+      .results {
         margin-bottom: 1rem;
         margin-left: 2rem;
       }
-      .doctors-bubble {
+      .results-bubble {
         display: grid;
         grid-template-areas: 
           "doctor clinic phone ";
@@ -329,7 +352,7 @@
         padding: .25rem 1rem;
         justify-content: space-between;
       }
-      .doctors-bubble .doctor {
+      .results-bubble .result {
         display: flex;
         justify-content: start;
       }
@@ -353,3 +376,5 @@
       }
       
   }
+
+
