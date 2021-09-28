@@ -5,49 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Patient Search - Century Health</title>
-    <link rel="shortcut icon" href="/images/admin-patient-images/favicon.svg">
+    <title>Admin Patient - Century Health</title>
+    <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./admin-patient-search.css">
-    <script src="./admin-dash.js" defer></script>
+    <link rel="stylesheet" href="admin-patient-search.css">
+    <!-- <script src="patient-dash.js" defer></script> -->
 </head>
 
 <body>
     <div class="wrapper">
         <!--Header-->
-        <header><a href="#"><img src="../images/admin-patient-images/logo_header.svg" class="logo"></a>
+        <header><a href="../index.html"><img src="../images/admin-patient-images/logo_header.svg" class="logo"></a>
             <button class="hamburger" id="hamburger"><img src="../images/admin-patient-images/fi_menu.svg"></button>
         </header>
         <!--Navigation-->
         <nav>
             <ul class="nav-ul" id="nav-ul">
                 <li>
-                    <a href="#">
+                    <a href="admin-dash.html">
                         <img src="../images/admin-patient-images/dashboard_icon_inactive.svg" alt="dashboard icon">
                         Dashboard</a>
                 </li>
+        
                 <li>
-                    <a href="#" class="active-link">
+                    <a href="../Admin/admin-patient-search.html" class="active-link">
                         <img src="../images/admin-patient-images/users_icon.svg" alt="users icon">
                         Users</a>
                 </li>
+
                 <li>
-                    <a href="#">
-                        <img src="../images/admin-patient-images/clinics_icon.svg" alt="clinic icon">
-                        Pharmacies & Clinics</a>
+                    <a href="../Admin/admin-pharmacy-search.html">
+                        <img src="../images/admin-patient-images/clinics_icon.svg" alt="clinics icon">
+                        Pharmacies and Clinics</a>
                 </li>
+
                 <li>
                     <a href="../contact.html">
                         <img src="../images/admin-patient-images/requests_icon.svg" alt="requests icon">
                         Requests</a>
                         <li>
-                            <a href="../index.html">
+                            <a href="../Admin/admin-feedback.html">
                                 <img src="../images/admin-patient-images/feedback_icon.svg" alt="feedback icon" />
                                 Feedback & Complaints</a>
                         </li>
                 </li>
+
                 <li>
                     <a href="../index.html">
                         <img src="../images/admin-patient-images/logout_icon.svg" alt="logout icon" />
@@ -55,90 +59,139 @@
                 </li>
             </ul>
         </nav>
-        <div class="content-wrapper">
-            <!--Page Title-->
-            <div class="page-title">
-                <div class="back">
-                    <a href="#">
-                        < Back</a>
-                </div>
-                <h1>Patient Search</h1>
-            </div>
-            <!-- Patient Search Form -->
+        <main>
+            <a class="back" href="#">< Back</a>
+            <h1 class="main-heading">Patient Search</h1>
+            <div class="filter">
+                <a class="practitioner" href="../Doctor/doctor-profile.html"><h3>Practitioner</h3></a>
+                <a class="patients" href="../Patient/patient-profile.html"><h3>Patients</h3></a>
+            </div> 
+
             <div class="search">
-                <div class="filter">
-                    <a class="practitioner" href="#"><h3>Practitioner</h3></a>
-                    <a class="patients" href="#"><h3>Patients</h3></a>
-                </div> 
-                <div class="search-box">
-                    <input id="search" type="text" name="search" placeholder=" Enter Name">
-                    <button class="search-btn">Search</button>
-                </div>
+                <input id="search" type="text" name="search" placeholder="Enter Name">
+
+                <button class="search-btn">Search</button>
             </div>
-            <!-- Results -->
-            <section class="search-results">
-                <div class="row row-heading">
-                    <div class="col1">Name</div>
-                    <div class="col2"></div>
-                    <div class="col3">Sex</div>
-                    <div class="col4">Age</div>
-                    <div class="col5">Status</div>
-                    <div class="col6">Phone</div>
+            <section class="border-style visits">
+                <div class="bubble-heading">
+                    <p><b>Name</b></p>
+                    <p><b>Sex</b></p>
+                    <p><b>Age</b></p>
+                    <p><b>Status</b></p>
+                    <p><b>Phone</b></p>
                 </div>
-                <a class="row row-results bubble-style" href="doctor-patient.html">
-                    <p><img class="col1" src="../images/doctor-dash/patient-riker.svg" alt="Image of patient"></p>
-                    <div class="col2"><b>William Riker</b></div>
-                    <div class="col3">Male</div>
-                    <div class="col4">33yrs</div>
-                    <div class="col5">Married</div>
-                    <div class="col6">(455)888-3884</div>
-                </a>
-                <a class="row row-results bubble-style" href="doctor-patient.html">
-                    <p><img class="col1" src="../images/doctor-dash/patient-nereys.svg" alt="Image of patient"></p>
-                    <div class="col2"><b>Kira Nereys</b></div>
-                    <div class="col3">Female</div>
-                    <div class="col4">21yrs</div>
-                    <div class="col5">Single</div>
-                    <div class="col6">(455)888-3884</div>
-                </a>
-                <a class="row row-results bubble-style" href="doctor-patient.html">
-                    <p><img class="col1" src="../images/doctor-dash/patient-bostick.svg" alt="Image of patient"></p>
-                    <div class="col2"><b>Michael Bostick</b></div>
-                    <div class="col3">Male</div>
-                    <div class="col4">35yrs</div>
-                    <div class="col5">Single</div>
-                    <div class="col6">(455)888-3884</div>
-                </a>
-                <a class="row row-results bubble-style" href="doctor-patient.html">
-                    <p><img class="col1" src="../images/doctor-dash/patient-nereys.svg" alt="Image of patient"></p>
-                    <div class="col2"><b>Kira Nereys</b></div>
-                    <div class="col3">Female</div>
-                    <div class="col4">21yrs</div>
-                    <div class="col5">Single</div>
-                    <div class="col6">(455)888-3884</div>
-                </a>
-                <a class="row row-results bubble-style" href="doctor-patient.html">
-                    <p><img class="col1" src="../images/doctor-dash/patient-nereys.svg" alt="Image of patient"></p>
-                    <div class="col2"><b>Kira Nereys</b></div>
-                    <div class="col3">Female</div>
-                    <div class="col4">21yrs</div>
-                    <div class="col5">Single</div>
-                    <div class="col6">(455)888-3884</div>
-                </a>
-                <a class="row row-results bubble-style" href="doctor-patient.html">
-                    <p><img class="col1" src="../images/doctor-dash/patient-nereys.svg" alt="Image of patient"></p>
-                    <div class="col2"><b>Kira Nereys</b></div>
-                    <div class="col3">Female</div>
-                    <div class="col4">21yrs</div>
-                    <div class="col5">Single</div>
-                    <div class="col6">(455)888-3884</div>
-                </a>
+                <div class="patients-bubble bubble-style">
+                    <div class="patient">
+                        <img src="../images/admin-pharmacy-images/patient-riker.svg" alt="image of patient">
+                        <div class="patient-info">
+                            <p><b>William Riker</b></p>
+                        </div>
+                    </div>
+                    <p class="sex">Male</p>
+                    <p class=age>33yrs</p>
+                      
+                    <div class="status">
+                        <p>Married</p>
+                    </div>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                  
+                </div>
+                <div class="patients-bubble bubble-style">
+                    <div class="patient">
+                        <img src="../images/admin-pharmacy-images/patient-nereys.svg" alt="image of patient">
+                        <div class="patient-info">
+                            <p><b>Kira Nereys</b></p>
+                        </div>
+                    </div>
+                    <p class="sex">Female</p>
+                    <p class=age>21yrs</p>
+                      
+                    <div class="status">
+                        <p>Single</p>
+                    </div>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                  
+                </div>
+                <div class="patients-bubble bubble-style">
+                    <div class="patient">
+                        <img src="../images/admin-pharmacy-images/patient-bostick.svg" alt="image of patient">
+                        <div class="patient-info">
+                            <p><b>Michael Bostick</b></p>
+                        </div>
+                    </div>
+                    <p class="sex">Male</p>
+                    <p class=age>35yrs</p>
+                      
+                    <div class="status">
+                        <p>Single</p>
+                    </div>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                  
+                </div>
+                <div class="patients-bubble bubble-style">
+                    <div class="patient">
+                        <img src="../images/admin-pharmacy-images/patient-nereys.svg" alt="image of patient">
+                        <div class="patient-info">
+                            <p><b>Kira Nereys</b></p>
+                        </div>
+                    </div>
+                    <p class="sex">Female</p>
+                    <p class=age>21yrs</p>
+                      
+                    <div class="status">
+                        <p>Single</p>
+                    </div>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                  
+                </div>
+                <div class="patients-bubble bubble-style">
+                    <div class="patient">
+                        <img src="../images/admin-pharmacy-images/patient-nereys.svg" alt="image of patient">
+                        <div class="patient-info">
+                            <p><b>Kira Nereys</b></p>
+                        </div>
+                    </div>
+                    <p class="sex">Female</p>
+                    <p class=age>21yrs</p>
+                      
+                    <div class="status">
+                        <p>Single</p>
+                    </div>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                  
+                </div>
+                <div class="patients-bubble bubble-style">
+                    <div class="patient">
+                        <img src="../images/admin-pharmacy-images/patient-nereys.svg" alt="image of patient">
+                        <div class="patient-info">
+                            <p><b>Kira Nereys</b></p>
+                        </div>
+                    </div>
+                    <p class="sex">Female</p>
+                    <p class=age>21yrs</p>
+                      
+                    <div class="status">
+                        <p>Single</p>
+                    </div>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                  
+                </div>
+                
             </section>
-        </div>
-
+        </main>
     </div>
-
 </body>
 
 </html>
-<!-- admin patient -->
