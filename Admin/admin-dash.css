@@ -92,7 +92,7 @@ button.hamburger {
   margin: 0;
   height: 70vh;
   background-color: var(--primaryColor);
-  justify-content: center;
+  /* justify-content: center; removes extra space in dashboard */
   z-index: 10;
 } 
 .nav-ul a {
@@ -330,9 +330,11 @@ button.accept:hover {
  }
  
   nav a:hover,
-  .activeLink {
-    color: var(--secondaryColor);
-  }
+
+  .active-link {
+    color: var(--secondaryColor) !important;
+    font-weight: 700;
+}
 
   .nav-ul li {
     line-height: 50px;
