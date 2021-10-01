@@ -1,0 +1,406 @@
+:root {
+    --background: #f9f9f9;
+    --primaryText: #180126;
+    --secondaryText: #7e7a8f;
+    --tertiaryText: #c3c7d2;
+    --primaryColor: #3a5df8;
+    --secondaryColor: #f3ea12;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+      margin: 0;
+      padding:0;
+      color: var(--primaryText);
+      font-family: "Open Sans", sans-serif;
+  }
+  main {
+      grid-area: main;
+    
+  }
+  .back {
+      font-weight: 700;
+      margin-left: 30px;
+      text-decoration: none;
+  }
+  .back:link,
+  .back:visited {
+      color: var(--primaryColor);
+  }
+  .back:hover {
+      color: var(--secondaryColor);
+  }
+  .main-heading {
+      text-align: center;
+      margin-bottom: 45px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+  
+  }
+  h3 , h4 {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
+  .upload-file{
+    background-color:rgb(239, 239, 239);
+    border-radius: 1px;
+    border: var(--primaryText) solid 1px;
+    padding: 5px;
+    font-weight: normal;
+    margin: 0px;
+
+  }
+  
+  button {
+      cursor: pointer;
+      background-color: var(--secondaryColor);
+      color: var(--primaryText);
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-weight: 700;
+      border: none;
+      padding: 1rem 4rem;
+      margin-left: 30%;
+  }
+  
+  .bubble-style{
+    border-radius: 20px;
+      background-color: var(--background);
+      border: 1px solid var(--tertiaryText);
+      align-items: center;
+      max-width: fit-content;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "main";
+  }
+  
+  
+  /********** Nav Mobile View**********/
+  header {
+    grid-area: header;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  nav {
+    grid-area: sidebar;
+  }
+  .logo {
+    width: 60%;
+    margin: 0;
+  }
+  .hamburger {
+    display: block;
+    float: right;
+  }
+  button.hamburger {
+   padding: 0;
+   margin: 0;
+   background-color: transparent;
+   border: none;
+  }
+  
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 70vh;
+    background-color: var(--primaryColor);
+    z-index: 10;
+  } 
+  .nav-ul a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  .nav-ul li {
+    padding: 20px;
+    list-style-type: none;
+  }
+  .nav-ul img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .nav-ul.show {
+     display: flex;
+  }
+  
+  .active-link {
+      color: var(--secondaryColor) !important;
+      font-weight: 700;
+  }
+  /****Upload Section Styling****/
+.upload-section{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+}
+
+
+/*****Upload Box****/
+.upload-container{
+    border: var(--secondaryText) dashed 2px;
+    padding: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  /***Uplaod IMG ICON size and Map SVG size****/
+  .upload-section img{
+    width: 70%;
+  }
+  .upload-container img {
+      width: 30%;
+      height: 30%;
+  }
+  /**** Pharmacy Information Styling  ****/
+  label{
+    color: var(--primaryText);
+    font-weight: bold;
+}
+input[type ="text"], input[type="tel"]{
+    background-color: var(--background);
+    border: 1px solid #C3C7D2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: var(--primaryText);
+    font-size: 13px;
+    padding: 5px;
+    width: 80%;
+    height: 2.20rem;
+    margin-bottom: 15px;
+}
+.pharmacy-information .input-box {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+div .row{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;    
+  }
+  .city{
+      width: 42%;
+  }
+  .state , .zip{
+      width: 20%;
+  }
+  .row label{
+    display: none;
+  }
+  .pharmacy-information .address-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ label {
+   display: none;
+ }
+  /***Pharmacy hours styling***/
+  .start, .end{
+    width: 100px;
+    margin-left: 10px;
+}
+/*  .hours-section{
+      width: 66%;     
+  }*/
+  .hours-section{
+    margin: 1rem;
+  }
+  .days{
+      display: grid;
+      grid-template-areas: "days open to close";
+      grid-template-columns: 100px 125px 15px 125px;
+      margin: 0px;
+  }
+  .days label{
+    display: block;
+  }
+  .hours-titles{
+      display: grid;
+      grid-template-areas: "block1 open-title to close-title";
+    grid-template-columns: 100px 125px 15px 125px;
+    margin: 0px;
+
+  }
+  .hours-titles > p {
+      text-align: center;
+      margin: 0px;
+      font-weight: bold;
+  }
+  .open{
+      grid-area: open-title;
+    
+  }
+  .close{
+      grid-area: close-title;
+  }
+  .days > label {
+      grid-area: days;
+  }
+ .start{
+      grid-area: open;
+      width: 90px;
+      text-align: center;
+  }
+  .days > .end {
+      grid-area: close;
+      width: 90px;
+      text-align: center;
+  }
+  .hours-section h4 {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+
+  
+  @media (max-width: 1300px) {
+      .pharmacy-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+     
+  
+  }
+  
+  
+  /************************Styling for Laptops and Small Screens 769px and up*****************************/
+  @media only screen and (min-width: 769px) {
+   
+    /* This creates a two column view and makes the sidebar navigation visible  */
+    .wrapper {
+      grid-template-columns: 275px  1fr;
+      grid-template-areas: 
+          "header  header"
+          "sidebar main";
+    }
+  
+    /***** Need this to make nav visible *****/
+    /***** Nav *****/
+    .logo {
+      width: 250px;
+    }
+   .nav-ul {
+     display: flex;
+     background-color: var(--primaryColor);
+     border-radius: 0 20px 0 0;
+     color: var(--background);
+     height: 100vh;
+     padding-top: 0;
+     position: sticky;
+     top: 0px;
+   }
+   
+    nav a:hover,
+    .activeLink {
+      color: var(--secondaryColor);
+    }
+  
+    .nav-ul li {
+      line-height: 50px;
+    }
+    .nav-ul img {
+      vertical-align: middle;
+      padding-right: 5px;
+    }
+    
+    /* hides hamburger button */
+    .hamburger {
+      display: none;
+    }
+  
+  
+  }
+  
+  @media (min-width: 1300px) {
+  
+      .wrapper {
+          grid-template-columns: 275px 1fr;
+          grid-template-areas: 
+              "header  header"
+              "sidebar main";
+      }
+      .pharmacy-info {
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: 
+                "left-pharm right-pharm";
+      }
+      .upload-section{
+        grid-area: left-pharm;
+        height: 80%;
+      }
+      .upload-section h4 {
+        width: 300px;
+      }
+      .address{
+        width: 300px;
+      }
+      /***** Pharamcy Information Section*****/
+      .pharmacy-information{
+        grid-area: right-pharm;
+      }
+      .pharmacy-information .input-box{
+        align-items: flex-start;
+      }
+      .pharmacy-information .address-info {
+        align-items: flex-start;
+       
+      }
+      .pharmacy-information h3{
+        margin-top: 0px;
+      }  
+      .address-info label{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      .pharmacy-info {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          margin-bottom: 30px;
+      }
+  
+     h3 , h4 {
+       text-align: left;
+     }
+     div .row {
+       justify-content: flex-start;
+     }
+     .row label{
+      display: inline-block;
+     }
+     label{
+       display: inline-block;
+     }
+     
+    
+  
+  }
+  /* pharmacy info css */
