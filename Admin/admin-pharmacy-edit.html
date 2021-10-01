@@ -71,7 +71,7 @@
                     <div class="upload-container">
                         <img src="/images/admin-pharmacy-images/upload-icon.svg" alt="">
                         <p>Drag and Drop Files Here to Upload</p>
-                        <button>Or select Files to Upload</button>
+                        <button class="upload-file" >Or select Files to Upload</button>
                     </div>
                     
                         <div class="address">
@@ -85,42 +85,43 @@
                 </section>
                 <section class="pharmacy-information" >
                     <h3>Pharmacy Information</h3>
-                    <div >
+                    <div class="input-box" >
                         <label for="pharmacy-name">Pharmacy Name</label> <br>
-                        <input type="text" name="" id="pharmacy-name" placeholder="">
+                        <input type="text" name="" id="pharmacy-name" placeholder="Quark’s Pharmacy" readonly>
                     </div>
-                    <div >
+                    <div class="input-box" >
                         <label for="address-1">Address 1</label> <br>
-                        <input type="text" name="" id="address-1" placeholder="">
+                        <input type="text" name="" id="address-1" placeholder="4517 Washington Ave." readonly>
                     </div>
-                    <div >
+                    <div class="input-box" >
                         <label for="address-2">Address 2</label> <br>
-                        <input type="text" name="address" id="address-2" placeholder="">
+                        <input type="text" name="address" id="address-2" placeholder="" readonly>
                     </div>
                     <div class="row">
-                        <div class="city"> <label for="city">City</label> <br> <input type="text" name="city" id="city"></div>
-                        <div class="state"><label for="state">State</label> <br> <input type="text" name="city" id="state"></div>
-                        <div class="zip"><label for="zip">Zip Code</label> <br> <input type="text" name="zip" id="zip"></div>
+                        <div class="city"> <label for="city">City</label> <br> <input type="text" name="city" id="city" placeholder="Manchester" readonly></div>
+                        <div class="state"><label for="state">State</label> <br> <input type="text" name="city" id="state" placeholder="KY" readonly></div>
+                        <div class="zip"><label for="zip">Zip Code</label> <br> <input type="text" name="zip" id="zip" placeholder="39495" readonly></div>
                     </div>
-                    <div class="phone
-                    " >
+                    <div class="phone input-box" >
                         <label for="phone">Phone</label> <br>
-                        <input type="text" name="" id="phone" autocomplete="off">
+                        <input type="tel"  name="" id="phone" autocomplete="off" placeholder="(455) 888-3884" readonly>
                     </div>
                     <div class="hours-section">
                         <h4>Hours</h4>
                         <div class="hours-titles"><p class="open">Open</p><p class="close">Close</p></div>
                         <div class="edit-hours">
-                            <p class="days"> <label>Monday</label> <input type="time" name="" id=""class="start"> To <input type="time" name="" id="" class="end"></p>
-                        <p class="days"><label>Tuesday</label> <input type="time" name="" id=""class="start"> To <input type="time" name="" id=""class="end"></p>
-                        <p class="days"><label>Wednesday</label> <input type="time" name="" id=""class="start"> To <input type="time" name="" id=""class="end"></p>
-                        <p class="days"><label>Thursday</label> <input type="time" name="" id=""class="start"> To <input type="time" name="" id=""class="end"></p>
-                        <p class="days"><label>Friday</label> <input type="time" name="" id=""class="start"> To <input type="time" name="" id=""class="end"></p>
-                        <p class="days"><label>Saturday</label> <input type="time" name="" id=""class="start"> To <input type="time" name="" id=""class="end"></p>
-                        <p class="days"><label>Sunday</label> <input type="time" name="" id=""class="start"> To <input type="time" name="" id=""class="end"></p>
+                            <p class="days"> <label>Monday</label> <input type="text" name="" id=""class="start" placeholder="9:00" readonly> To <input type="text" name="" id="" class="end" placeholder="7:00" readonly></p>
+                        <p class="days"><label>Tuesday</label> <input type="text" name="" id=""class="start" placeholder="9:00" readonly> To <input type="text" name="" id=""class="end" placeholder="7:00" readonly></p>
+                        <p class="days"><label>Wednesday</label> <input type="text" name="" id=""class="start" placeholder="9:00" readonly> To <input type="text" name="" id=""class="end" placeholder="7:00" readonly></p>
+                        <p class="days"><label>Thursday</label> <input type="text" name="" id=""class="start" placeholder="9:00" readonly> To <input type="text" name="" id=""class="end" placeholder="7:00" readonly></p>
+                        <p class="days"><label>Friday</label> <input type="text" name="" id=""class="start" placeholder="9:00" readonly> To <input type="text" name="" id=""class="end" placeholder="7:00" readonly></p>
+                        <p class="days"><label>Saturday</label> <input type="text" name="" id=""class="start" placeholder="9:00" readonly> To <input type="text" name="" id=""class="end" placeholder="7:00" readonly></p>
+                        <p class="days"><label>Sunday</label> <input type="text" name="" id=""class="start" placeholder="9:00" readonly> To <input type="text" name="" id=""class="end" placeholder="7:00" readonly></p>
                         </div>
                     </div>
+                    <button>Update</button>
                 </section>
+                
                 
             </div>
         </main>
