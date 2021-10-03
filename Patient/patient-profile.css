@@ -170,6 +170,7 @@ button.hamburger {
     margin: 0 1rem;
     padding: 1rem;
 }
+
 .patient {
     display: flex;
     flex-direction: column;
