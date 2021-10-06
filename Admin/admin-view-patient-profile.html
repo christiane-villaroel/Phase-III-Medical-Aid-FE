@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Century Health</title>
+    <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin-view-patient-profile.css">
+  
+</head>
+
+<body>
+    <div class="wrapper">
+       <!--Header-->
+       <header><a href="#"><img src="/images/admin-dash/logo_header.svg" class="logo"></a>
+        <button class="hamburger" id="hamburger"><img src="/images/admin-dash/fi_menu.svg"></button>
+    </header>
+    <!--Navigation-->
+    <nav>
+        <ul class="nav-ul" id="nav-ul">
+            <li>
+                <a href="admin-dash.html" class="active-link">
+                    <img src="/images/admin-dash/dashboard_icon.svg" alt="dashboard icon">
+                    Dashboard</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/images/admin-dash/users_icon.svg" alt="users icon">
+                    Users</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/images/admin-dash/clinics_icon.svg" alt="Clinics icon">
+                    Pharmacies and Clinics</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/images/admin-dash/requests_icon.svg" alt="requests icon">
+                    Requests</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/images/admin-dash/feedback_icon.svg" alt="feedback icon">
+                    Feedback & Complaints</a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="/images/admin-dash/logout_icon.svg" alt="logout icon" />
+                    Logout</a>
+            </li>
+        </ul>
+    </nav>
+        <main>
+            <a class="back" href="admin-patient-search.html">< Back</a>
+            <h1 class="main-heading">Patient Profile</h1>
+            <form>
+                <!--Patient Info-->
+                <section class="patient-info-block">
+                    <div class="heading">
+                        <h2>Personal Information</h2>
+                    </div>
+                    <div class="personal-info bubble-style">
+                        <div class="patient">
+                            <img src="../images/patient-images/michael-profile.svg" alt="profile-image" class="userPic" />
+                            <p>Michael Bostick</p>
+                        </div>
+                        <div class="patient-info">
+                            <div class="DOB">
+                                <label for="birth-date">Date of Birth </label><br>
+                               <p>2/22/83</p>
+                            </div>
+                            <div class="age">
+                                <label for="age">Age</label><br>
+                               <p>35</p>
+                            </div>
+                            <div class="ethnicity">
+                            <label for="ethnicity">Race/Ethnicity</label><br>
+                                <ul>
+                                    <li>African American</li>
+                                    <li>Japanese</li>
+                                    <li>Italian</li>
+                                </ul>
+                        </div>
+                            <div class=" gender">
+                            <label for="gender">Gender</label><br>
+                            <p>Male</p>
+                            </div>
+                            <div class="status">
+                            <label for="martial-status">Marital status</label><br>
+                            <p>Single</p>
+                        </div>
+                    </div>
+                </section>
+                  <!--Appointments-->
+        <section class="appointments">
+            <div class="heading">
+                <h2>Upcomming Appointments</h2>
+            </div>
+            <div class="bubble-heading">
+                <p>Specialist<img class="up-down" src="../images/patient-images/up-down-arrow.svg"></p>
+                <p>Date<img class="up-down"  src="../images/patient-images/up-down-arrow.svg"></p>
+                <p>Time<img  class="up-down" src="../images/patient-images/up-down-arrow.svg"></p>
+                <p>Status<img  class="up-down" src="../images/patient-images/up-down-arrow.svg"></p>
+            </div>
+            <div class="visits-bubble bubble-style">
+                <div class="visit">
+                <img src="../images/patient-images/drcrusher.svg">
+                <p>Dr. Crusher <br>Internal Medicine</p>
+                </div>
+                <div class="visit-date">
+                    <p>6/29/21</p>
+                </div>
+                <div class="visit-time">
+                    <p>9:00am</p>
+                </div>
+                <div class="visit-status">
+                    <p>upcoming</p>
+                </div>
+            </div>
+            <div class="visits-bubble bubble-style">
+                <div class="visit">
+                    <img src="../images/patient-images/drpul.svg">
+                    <p>Dr. Pulaski <br>Internal Medicine</p>
+                </div>
+                <div class="visit-date">
+                    <p>8/18/21</p>
+                </div>
+                <div class="visit-time">
+                    <p>11:00am</p>
+                </div>
+                <div class="visit-status">
+                    <p>cancelled</p>
+                </div>
+            </div>
+            <div class="visits-bubble bubble-style">
+                <div class="visit">
+                    <img src="../images/patient-images/drpul.svg">
+                    <p>Dr. Pulaski <br>Internal Medicine</p>
+                </div>
+                <div class="visit-date">
+                    <p>8/18/21</p>
+                </div>
+                <div class="visit-time">
+                    <p>11:00am</p>
+                </div>
+                <div class="visit-status">
+                    <p>cancelled</p>
+                </div>
+            </div>
+            <div>
+                <a href="#">Previous appointments</a>
+            </div>
+
+        </section>
+        <section class="results">
+            
+            <div class="bubble-heading">
+               <h2>Recent Feedback</h2>
+               <p class="review-title"></p>
+                <p class="rate"><b>Rate</b></p>
+                <p class="confirm-title"><b>Action</b></p>
+            </div>
+            <div class="results-bubble bubble-style">
+                <div class="result">
+                     <img src="/images/admin-dash/bostick.svg" alt="">
+                     <p><b>Michael Bostick </b></p>
+                </div>
+                <p>“Dr. Crusher was out of this world! </p>
+                <p class="location">
+                    <img src="/images/admin-dash/stars.svg" alt="">
+                </p>
+                <p class="confirm"><a href="#"><button class="review btn"><b >Review</b></button></a><a href="#"><button class="accept btn"><b>Accept</b></button></a></p>
+            </div>
+            <div class="results-bubble bubble-style">
+                <div class="result">
+                     <img src="/images/admin-dash/bostick.svg" alt="">
+                     <p><b>Michael Bostick </b></p>
+                </div>
+                <p>“Dr. Pulaski used some weird sci-fi device and instantly relieved my pain”!</p>
+                <p class="location">
+                    <img src="/images/admin-dash/stars.svg" alt="">
+                </p>
+                <p class="confirm"><a href="#"><button class="review btn"><b >Review</b></button></a><a href="#"><button class="accept btn"><b>Accept</b></button></a></p>
+            </div>
+            <div class="results-bubble bubble-style">
+                <div class="result">
+                     <img src="/images/admin-dash/bostick.svg" alt="">
+                     <p><b>Michael Bostick </b></p>
+                </div>
+                <p>“Nurse Chapel was such a delight!”</p>
+                <p class="location">
+                    <img src="/images/admin-dash/stars.svg" alt="">
+                </p>
+                <p class="confirm"><a href="#"><button class="review btn"><b >Review</b></button></a><a href="#"><button class="accept btn"><b>Accept</b></button></a></p>
+            </div>
+           
+        </section>
+
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
