@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Century Health</title>
+    <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin-add-new-pharmacy.css">
+    <script src="admin-dash.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <header><a href="#"><img src="../images/admin-pharmacy-images/logo_header.svg" class="logo"></a>
+            <button class="hamburger" id="hamburger"><img src="../images/admin-pharmacy-images/fi_menu.svg"></button>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="nav-ul" id="nav-ul">
+                <li>
+                    <a href="patient-dash.html">
+                        <img src="../images/admin-pharmacy-images/dashboard_icon_inactive.svg" alt="dashboard icon">
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a href="patient-profile.html">
+                        <img src="../images/admin-pharmacy-images/users_icon_inactive.svg" alt="users icon">
+                        Users</a>
+                </li>
+                <!-- <li>
+                    <a href="patient-doctor.html" >
+                        <img src="../images/patient-images/doctor-icon.svg" alt="doctor icon">
+                        Talk to a Doctor</a>
+                </li> -->
+                <li>
+                    <a href="patient-clinic.html" class="active-link">
+                        <img src="../images/admin-pharmacy-images/clinics_icon.svg" alt="clinics icon">
+                        Pharmacies and Clinics</a>
+                </li>
+                <li>
+                    <a href="../contact.html">
+                        <img src="../images/admin-patient-images/requests_icon.svg" alt="requests icon">
+                        Requests</a>
+                        <li>
+                            <a href="../index.html">
+                                <img src="../images/admin-patient-images/feedback_icon.svg" alt="feedback icon" />
+                                Feedback & Complaints</a>
+                        </li>
+                </li>
+               
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/admin-pharmacy-images/logout_icon.svg" alt="logout icon" />
+                        Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <a class="back" href="#">< Back</a>
+            <h1 class="main-heading">Pharmacy and Clinic Information</h1>
+            <div class="pharmacy-info">
+                <section class="upload-section bubble-style">
+                    <img src="/images/admin-pharmacy-images/pharmacy-map.svg" alt="">
+                    <h4>Pharmacy Images</h4>
+                    <div class="upload-container">
+                        <img src="/images/admin-pharmacy-images/upload-icon.svg" alt="">
+                        <p>Drag and Drop Files Here to Upload</p>
+                        <button class="upload-file" >Or select Files to Upload</button>
+                    </div>
+                    
+                        <div class="address">
+                            <p><b>Pharmacy Name</b></p>
+                            <p>Address Line 1<br>
+                                Address Line 2<br>
+                                <br>
+                                (455) 888-3884
+                            </p>
+                        </div>
+                </section>
+                <section class="pharmacy-information" >
+                    <h3>Pharmacy Information</h3>
+                    <div class="input-box" >
+                        <label for="pharmacy-name">Pharmacy Name</label> <br>
+                        <input type="text" name="" id="pharmacy-name" placeholder="Pharmacy Name" >
+                    </div>
+                    <div class="input-box" >
+                        <label for="address-1">Address 1</label> <br>
+                        <input type="text" name="" id="address-1" placeholder="Address 1" >
+                    </div>
+                    <div class="input-box" >
+                        <label for="address-2">Address 2</label> <br>
+                        <input type="text" name="address" id="address-2" placeholder="Address 2" >
+                    </div>
+                    <div class="row">
+                        <div class="city"> <label for="city">City</label> <br> <input type="text" name="city" id="city" placeholder="City" ></div>
+                        <div class="state"><label for="state">State</label> <br> <input type="text" name="city" id="state" placeholder="State" ></div>
+                        <div class="zip"><label for="zip">Zip Code</label> <br> <input type="text" name="zip" id="zip" placeholder="Zip" ></div>
+                    </div>
+                    <div class="phone input-box" >
+                        <label for="phone">Phone</label> <br>
+                        <input type="tel"  name="" id="phone" autocomplete="off" placeholder="(455) 888-3884" >
+                    </div>
+                    <div class="hours-section">
+                        <h4>Hours</h4>
+                        <div class="hours-titles"><p class="open">Open</p><p class="close">Close</p></div>
+                        <div class="edit-hours">
+                            <p class="days"> <label>Monday</label> <input type="time" name="" id=""class="start" placeholder="9:00" > To <input type="time" name="" id="" class="end" placeholder="7:00"></p>
+                        <p class="days"><label>Tuesday</label> <input type="time" name="" id=""class="start" placeholder="9:00" > To <input type="time" name="" id=""class="end" placeholder="7:00" ></p>
+                        <p class="days"><label>Wednesday</label> <input type="time" name="" id=""class="start" placeholder="9:00"> To <input type="time" name="" id=""class="end" placeholder="7:00" ></p>
+                        <p class="days"><label>Thursday</label> <input type="time" name="" id=""class="start" placeholder="9:00" > To <input type="time" name="" id=""class="end" placeholder="7:00" ></p>
+                        <p class="days"><label>Friday</label> <input type="time" name="" id=""class="start" placeholder="9:00" > To <input type="time" name="" id=""class="end" placeholder="7:00" ></p>
+                        <p class="days"><label>Saturday</label> <input type="time" name="" id=""class="start" placeholder="9:00"> To <input type="time" name="" id=""class="end" placeholder="7:00" ></p>
+                        <p class="days"><label>Sunday</label> <input type="time" name="" id=""class="start" placeholder="9:00" > To <input type="time" name="" id=""class="end" placeholder="7:00" ></p>
+                        </div>
+                    </div>
+                    <button>Update</button>
+                </section>
+                
+                
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+<!-- pharmacy-info -->
