@@ -204,7 +204,7 @@
     margin: 0;
     height: 70vh;
     background-color: var(--primaryColor);
-    justify-content: center;
+    
     z-index: 10;
   } 
   .nav-ul a {
@@ -228,7 +228,9 @@
       color: var(--secondaryColor) !important;
       font-weight: 700;
   }
-  
+  .active-link > img{
+    color: var(--secondaryColor);
+  }
   /***** Recent Visits *****/
   .results {
       grid-area: doctors;
@@ -352,7 +354,7 @@
         margin-bottom: 1rem;
         margin-left: 2rem;
       }
-      .results-bubble {
+      .results-bubble  {
         display: grid;
         grid-template-areas: 
           "doctor location confirm ";
