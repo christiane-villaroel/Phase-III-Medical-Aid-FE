@@ -271,9 +271,15 @@
    
     nav a:hover,
     .activeLink {
-      color: var(--secondaryColor);
+      color: var(--secondaryColor) !important;
+      font-weight: 700;
     }
-  
+    nav a:hover, .activeLink {
+      color: var(--secondaryColor) !important;
+      font-weight: 700;}
+      .activeLink > img{
+        color: var(--secondaryColor)!important;
+      }
     .nav-ul li {
       line-height: 50px;
     }
