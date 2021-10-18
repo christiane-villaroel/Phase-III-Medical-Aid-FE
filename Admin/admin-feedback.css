@@ -104,7 +104,7 @@ header {
     margin: 0;
     height: 70vh;
     background-color: var(--primaryColor);
-    /* justify-content: center; */
+    justify-content: center;
     z-index: 10;
   } 
   .nav-ul a {
