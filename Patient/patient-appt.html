@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +11,14 @@
     <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="patient-appt.css">
     <script src="patient-dash.js" defer></script>
@@ -25,7 +35,7 @@
             <ul class="nav-ul" id="nav-ul">
                 <li>
                     <a href="patient-dash.html">
-                        <img src="../images/patient-images/dash-icon.svg" alt="dashboard icon">
+                        <img src="../images/patient-images/dash-inactive.svg" alt="dashboard icon">
                         Dashboard</a>
                 </li>
                 <li>
@@ -100,84 +110,31 @@
                 </div>
             </section>
             <section class="appointment">
-                <div class="date">
-                    <h2 class="heading">Available Dates</h2>
-                    <div class="calendar border-style">
-<!--                        Calender code adapted from  https://codepen.io/Markshall/pen/ExPxpYX-->
-                        <div class="calendar__opts">
-                            <select name="calendar__month" id="calendar__month">
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option selected>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>Decenber</option>
-                            </select>
-
-                            <select name="calendar__year" id="calendar__year">
-                                <option selected>2021</option>
-                                <option>2022</option>
-                                <option>2023</option>
-                                <option>2024</option>
-                            </select>
+                <!--Calender from codepen-->
+                <div class="cal-cont">
+                  <h2 class="heading">Available Dates</h2>
+                  <div class="container">
+                    <div class="calendar">
+                      <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">
+                          <h1></h1>
+                          <p></p>
                         </div>
-
-                        <div class="calendar__body">
-                            <div class="calendar__days">
-                                <div>Mo</div>
-                                <div>Tu</div>
-                                <div>We</div>
-                                <div>Th</div>
-                                <div>Fr</div>
-                                <div>Sa</div>
-                                <div>Su</div>
-                            </div>
-
-                            <div class="calendar__dates">
-                                <div class="calendar__date calendar__date--grey"><span>27</span></div>
-                                <div class="calendar__date calendar__date--grey"><span>28</span></div>
-                                <div class="calendar__date calendar__date--grey"><span>29</span></div>
-                                <div class="calendar__date calendar__date--grey"><span>30</span></div>
-                                <div class="calendar__date"><span>1</span></div>
-                                <div class="calendar__date"><span>2</span></div>
-                                <div class="calendar__date"><span>3</span></div>
-                                <div class="calendar__date"><span>4</span></div>
-                                <div class="calendar__date"><span>5</span></div>
-                                <div class="calendar__date"><span>6</span></div>
-                                <div class="calendar__date"><span>7</span></div>
-                                <div class="calendar__date"><span>8</span></div>
-                                <div class="calendar__date"><span>9</span></div>
-                                <div class="calendar__date"><span>10</span></div>
-                                <div class="calendar__date"><span>11</span></div>
-                                <div class="calendar__date"><span>12</span></div>
-                                <div class="calendar__date"><span>13</span></div>
-                                <div class="calendar__date"><span>14</span></div>
-                                <div class="calendar__date"><span>15</span></div>
-                                <div class="calendar__date"><span>16</span></div>
-                                <div class="calendar__date"><span>17</span></div>
-                                <div class="calendar__date"><span>18</span></div>
-                                <div class="calendar__date"><span>19</span></div>
-                                <div class="calendar__date"><span>20</span></div>
-                                <div class="calendar__date"><span>21</span></div>
-                                <div class="calendar__date"><span>22</span></div>
-                                <div class="calendar__date"><span>23</span></div>
-                                <div class="calendar__date"><span>24</span></div>
-                                <div class="calendar__date"><span>25</span></div>
-                                <div class="calendar__date"><span>26</span></div>
-                                <div class="calendar__date available-date"><span>27</span></div>
-                                <div class="calendar__date available-date"><span>28</span></div>
-                                <div class="calendar__date available-date"><span>29</span></div>
-                                <div class="calendar__date"><span>30</span></div>
-                                <div class="calendar__date"><span>31</span></div>
-                            </div>
-                        </div>
+                        <i class="fas fa-angle-right next"></i>
+                      </div>
+                      <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                      </div>
+                      <div class="days"></div>
                     </div>
+                  </div>
                 </div>
                 <div class="time">
                     <h2 class="heading">Available Time Slots</h2>
@@ -208,6 +165,7 @@
             </section>
         </main>
     </div>
+    <script src="patient-appt.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
