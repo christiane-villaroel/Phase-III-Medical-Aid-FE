@@ -287,7 +287,9 @@ button.hamburger {
    position: sticky;
    top: 0px;
  }
- 
+ .nav-ul.show {
+  display: flex;
+}
   nav a:hover,
   .activeLink {
     color: var(--secondaryColor);

@@ -127,7 +127,7 @@ header {
       grid-area: content;
       margin: 0 2rem;
   }
-  .back img{
+  /* .back img{
       vertical-align: middle;
   }
   .back {
@@ -139,7 +139,24 @@ header {
   }
   .back a:hover {
       color: var(--primaryColor);
-  }
+  } */
+  .back {
+    font-weight: 700;
+    margin-left: 17px;
+    margin-top: 14px;
+    text-decoration: none;
+}
+.back:link,
+.back:visited {
+    color: var(--primaryColor);
+    
+}
+.back:hover {
+    color: var(--secondaryColor);
+}
+.main-heading {
+  text-align: center;
+}
   .reviews a {
       text-decoration: none;
   }
