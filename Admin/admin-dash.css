@@ -83,6 +83,10 @@ button.hamburger {
  background-color: transparent;
  border: none;
 }
+.active-link {
+  color: var(--secondaryColor) !important;
+  font-weight: 700;
+}
 
 .nav-ul {
   display: none;
@@ -92,7 +96,6 @@ button.hamburger {
   margin: 0;
   height: 70vh;
   background-color: var(--primaryColor);
-  justify-content: center;
   /* justify-content: center; removes extra space in dashboard */
   z-index: 10;
 } 
