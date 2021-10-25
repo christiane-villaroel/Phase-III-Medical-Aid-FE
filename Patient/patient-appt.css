@@ -290,21 +290,17 @@ button.hamburger {
   border-radius: 50%;
   border: 3px solid  transparent;
   }
+
   .days div:active {
     background-color: var(--tertiaryText);
     border: 3px solid #457AFF;
     cursor: pointer;
   }
-  .days div:visited {
+  .days div:hover:not(.today){
     background-color: var(--tertiaryText);
     border: 3px solid #457AFF;
     cursor: pointer;
-  }
-  /* .days div:hover /*:not(.today)*/ /*{
-    background-color: var(--tertiaryText);
-    border: 3px solid #457AFF;
-    cursor: pointer;
-  } */
+  } 
   /*.days div:active{
     background-color: var(--tertiaryText);
     border: 3px solid #457AFF;
