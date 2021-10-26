@@ -204,7 +204,7 @@
     margin: 0;
     height: 70vh;
     background-color: var(--primaryColor);
-    justify-content: center;
+   
     z-index: 10;
   } 
   .nav-ul a {
@@ -239,6 +239,7 @@
   }
   .results .heading{
     margin-bottom: 15px;
+    text-align: center;
   }
   .results-bubble {
     display: grid;
@@ -305,6 +306,10 @@
     .hamburger {
       display: none;
     }
+    /* Results heading algin left*/
+    .results .heading {
+      text-align: left;
+    }
   
   }
   
@@ -370,6 +375,10 @@
         flex-wrap: wrap;
         gap:1em;
       }
+       /* Results heading algin left*/
+    .results .heading {
+      text-align: left;
+    }
      
   
       .location {
