@@ -19,6 +19,7 @@
   }
   main {
       grid-area: main;
+      overflow-x: hidden;
   }
   
   .back {
@@ -208,7 +209,6 @@
     margin: 0;
     height: 70vh;
     background-color: var(--primaryColor);
-    justify-content: center;
     z-index: 10;
   } 
   .nav-ul a {
@@ -241,6 +241,7 @@
   }
   .results .heading{
     margin-bottom: 15px;
+    text-align: center;
   }
   .results-bubble {
     display: grid;
