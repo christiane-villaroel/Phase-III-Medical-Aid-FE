@@ -290,7 +290,11 @@ button.hamburger {
   border-radius: 50%;
   border: 3px solid  transparent;
   }
-
+  .days div:visited{
+    background-color: var(--tertiaryText);
+    border: 3px solid #457AFF;
+    cursor: pointer;
+  }
   .days div:active {
     background-color: var(--tertiaryText);
     border: 3px solid #457AFF;
@@ -301,6 +305,11 @@ button.hamburger {
     border: 3px solid #457AFF;
     cursor: pointer;
   } 
+  .days div.active{
+    background-color: blue;
+  color: #fff;
+  } 
+  
   /*.days div:active{
     background-color: var(--tertiaryText);
     border: 3px solid #457AFF;
@@ -877,6 +886,10 @@ button.hamburger {
 .calendar__date span {
     position: relative;
     z-index: 1;
+}
+/*event listener styling*/
+.clicked > div  {
+  background-color: red;
 }
 
 select {

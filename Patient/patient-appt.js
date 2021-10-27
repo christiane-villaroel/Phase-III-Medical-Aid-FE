@@ -80,3 +80,12 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+//Event Listener for selected days 
+
+//target.addEventListener(event, function, usecapture)
+//  let clickedDay = document.querySelector('.days');
+
+// clickedDay.addEventListener('click',()=>{
+//    clickedDay.classList.toggle('clicked');
+//})
