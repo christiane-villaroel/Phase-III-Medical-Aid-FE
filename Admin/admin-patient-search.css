@@ -126,6 +126,13 @@ button {
     cursor: pointer;
 }
 
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: var(--primaryText);
+}
+
 /* ˅ This is so all the content sections have the same border, color and are vertically centered */
 .border-style {
     border-radius: 20px;
@@ -182,6 +189,10 @@ button.hamburger {
  background-color: transparent;
  border: none;
 }
+.active-link {
+  color: var(--secondaryColor) !important;
+  font-weight: 700;
+}
 
 .nav-ul {
   display: none;
@@ -191,6 +202,7 @@ button.hamburger {
   margin: 0;
   height: 70vh;
   background-color: var(--primaryColor);
+
   z-index: 10;
 } 
 .nav-ul a {
@@ -286,7 +298,9 @@ button.hamburger {
    position: sticky;
    top: 0px;
  }
- 
+ .nav-ul.show {
+  display: flex;
+}
   nav a:hover,
   .activeLink {
     color: var(--secondaryColor);

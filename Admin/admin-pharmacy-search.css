@@ -19,6 +19,7 @@
   }
   main {
       grid-area: main;
+      overflow-x: hidden;
   }
   
   .back {
@@ -132,7 +133,15 @@
   button {
       cursor: pointer;
   }
-  
+  /*Removes a tag underline text decoration and purple link colro for pharmacy results section*/
+  .no-style{
+    text-decoration: none;
+    color: var(--primaryText);
+  }
+  .no-style:visited{
+    text-decoration: none;
+    color: var(--primaryText);
+  }
   /* ˅ This is so all the content sections have the same border, color and are vertically centered */
   .border-style {
       border-radius: 20px;
@@ -232,6 +241,7 @@
   }
   .results .heading{
     margin-bottom: 15px;
+    text-align: center;
   }
   .results-bubble {
     display: grid;

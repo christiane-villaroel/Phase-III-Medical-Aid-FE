@@ -62,7 +62,7 @@
 
   }
   
-  button {
+  .button {
       cursor: pointer;
       background-color: var(--secondaryColor);
       color: var(--primaryText);
@@ -72,6 +72,7 @@
       border: none;
       padding: 1rem 4rem;
       margin-left: 30%;
+      text-decoration: none;
   }
   
   .bubble-style{
@@ -126,6 +127,7 @@
     margin: 0;
     height: 70vh;
     background-color: var(--primaryColor);
+    justify-content: center;
     z-index: 10;
   } 
   .nav-ul a {

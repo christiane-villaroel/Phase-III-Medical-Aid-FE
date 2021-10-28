@@ -137,6 +137,7 @@
     margin: 0;
     height: 70vh;
     background-color: var(--primaryColor);
+    justify-content: center;
     z-index: 10;
   } 
   .nav-ul a {
@@ -271,9 +272,15 @@
    
     nav a:hover,
     .activeLink {
-      color: var(--secondaryColor);
+      color: var(--secondaryColor) !important;
+      font-weight: 700;
     }
-  
+    nav a:hover, .activeLink {
+      color: var(--secondaryColor) !important;
+      font-weight: 700;}
+      .activeLink > img{
+        color: var(--secondaryColor)!important;
+      }
     .nav-ul li {
       line-height: 50px;
     }

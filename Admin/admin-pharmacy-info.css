@@ -71,6 +71,20 @@ p {
     text-align: center;
     /*margin: 0 auto;*/
 }
+.button{
+  background: var(--secondaryColor);
+    color: var(--primaryText);
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+   
+}
 
 .directions-btn:hover {
     background-color: var(--background);
@@ -133,6 +147,7 @@ button.hamburger {
   margin: 0;
   height: 70vh;
   background-color: var(--primaryColor);
+  justify-content: center;
   z-index: 10;
 } 
 .nav-ul a {

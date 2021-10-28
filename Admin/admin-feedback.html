@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Admin/admin-feedback.css">
-    <script src="/Admin/admin-dash.js" defer></script>
+    <script src="admin-dash.js" defer></script>
 </head>
 
 <body>
@@ -29,27 +29,27 @@
                         Dashboard</a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="admin-patient-search.html">
                         <img src="/images/admin-dash/users_icon.svg" alt="users icon">
                         Users</a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="admin-pharmacy-search.html">
                         <img src="/images/admin-dash/clinics_icon.svg" alt="Clinics icon">
                         Pharmacies and Clinics</a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="admin-request.html">
                         <img src="/images/admin-dash/requests_icon.svg" alt="requests icon">
                         Requests</a>
                 </li>
                 <li>
-                    <a href="#" class="activeLink">
+                    <a href="admin-feedback.html" class="activeLink">
                         <img src="/images/admin-dash/feedback_icon_active.svg" alt="feedback icon">
                         Feedback & Complaints</a>
                 </li>
                 <li>
-                    <a href="index.html">
+                    <a href="/index.html">
                         <img src="/images/admin-dash/logout_icon.svg" alt="logout icon" />
                         Logout</a>
                 </li>
@@ -58,11 +58,14 @@
         <!--Feedback and Complaints-->
         <div class="content">
             <div class="back">
-                <a href="admin-dash.html"><img src="/images/admin-dash/back_arrow.svg">Back</a>
+                <p>
+                    <a class="back" href="admin-dash.html">&#60; Back</a>
+                </p>
+                <h1 class="main-heading">Feedback and Complaints</h1>
             </div>
 
             <section class="reviews">
-                <h1>Feedback and Complaints</h1>
+               
                 <div class="bubble-heading">
                     <p><b>Reviewer</b></p>
                     <p><b>Quote</b></p>
