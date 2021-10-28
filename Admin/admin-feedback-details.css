@@ -226,6 +226,12 @@
     justify-content: center;
     align-items: center;
   }
+  textarea {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primaryText);
+    font-family: "Open Sans", sans-serif;
+  }
   /***Reply Styling***/
   .reply-content h2{
     font-size: 20px;
